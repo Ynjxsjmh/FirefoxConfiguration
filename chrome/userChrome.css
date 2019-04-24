@@ -2,20 +2,16 @@
 // https://gist.github.com/ergoithz/0890fef907945f0380e7
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
-#nav-bar { /* main toolbar containing address bar, search bar, add-on icons */
 
--moz-box-ordinal-group: 3 !important;
-
+#TabsToolbar { /* tab bar */
+  /* 1 should be at top */
+-moz-box-ordinal-group: 1 !important;
 }
 #PersonalToolbar { /* bookmarks toolbar */
-
 -moz-box-ordinal-group: 2 !important;
-
 }
-#TabsToolbar { /* tab bar */
-
--moz-box-ordinal-group: 1 !important;
-
+#nav-bar { /* main toolbar containing address bar, search bar, add-on icons */
+-moz-box-ordinal-group: 3 !important;
 }
 
 #nav-bar { /* main toolbar containing address bar, search bar, add-on icons */
@@ -27,6 +23,12 @@
     overflow: hidden;
 }
 #nav-bar:hover {
+    height: auto;
+    margin-bottom: 0px;
+    opacity: 1;
+    overflow: show;
+}
+#nav-bar:focus-within {
     height: auto;
     margin-bottom: 0px;
     opacity: 1;
