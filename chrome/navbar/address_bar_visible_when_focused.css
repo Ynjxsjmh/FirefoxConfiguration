@@ -1,0 +1,39 @@
+// https://www.reddit.com/r/firefox/comments/4biepx/any_alternative_to_toolbar_autohide/
+// https://gist.github.com/ergoithz/0890fef907945f0380e7
+
+
+#TabsToolbar { /* tab bar */
+  /* 1 should be at top */
+-moz-box-ordinal-group: 1 !important;
+}
+#PersonalToolbar { /* bookmarks toolbar */
+-moz-box-ordinal-group: 2 !important;
+}
+#nav-bar { /* main toolbar containing address bar, search bar, add-on icons */
+-moz-box-ordinal-group: 3 !important;
+}
+
+#nav-bar { /* main toolbar containing address bar, search bar, add-on icons */
+    position: relative;
+    z-index: 1;
+    height: 3px;
+    margin-bottom: -3px;
+    opacity: 0;
+    overflow: hidden;
+}
+#nav-bar:hover {
+    height: auto;
+    margin-bottom: 0px;
+    opacity: 1;
+    overflow: show;
+}
+#nav-bar:focus-within {
+    height: auto;
+    margin-bottom: 0px;
+    opacity: 1;
+    overflow: show;
+}
+#content-deck{
+    position:relative;
+    z-index: 0;
+}
