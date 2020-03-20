@@ -3,4 +3,7 @@
 
 @import "./tab/x_visible_when_hover.css";
 
+@import url("./simpleMenuWizard/link-context.css");       /* ...a link  */
+@import url("./simpleMenuWizard/tab-context.css");        /* ...a tab   */
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
