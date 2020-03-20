@@ -26,3 +26,9 @@ user_pref("browser.tabs.closeWindowWithLastTab", false);
 
 // 更改标签页最小宽度
 user_pref("browser.tabs.tabMinWidth", 100);
+
+pref("browser.tabs.remote.autostart", true);
+
+pref("intl.charset.fallback.utf8_for_file", true);
+
+pref("browser.tabs.loadInBackground", true);
