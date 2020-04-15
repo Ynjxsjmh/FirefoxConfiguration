@@ -32,3 +32,10 @@ pref("browser.tabs.remote.autostart", true);
 pref("intl.charset.fallback.utf8_for_file", true);
 
 pref("browser.tabs.loadInBackground", true);
+
+pref("middlemouse.paste", true);
+
+pref("browser.preferences.instantApply", true);
+
+pref("middlemouse.scrollbarPosition", true);
+
